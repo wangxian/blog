@@ -16,9 +16,9 @@
     <meta property="og:image" content="undefined"/>
   
 
-  <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="木頭" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link href="/blog/favicon.png" rel="icon">
+  <link rel="alternate" href="/blog/atom.xml" title="木頭" type="application/atom+xml">
+  <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   
@@ -27,8 +27,8 @@
 
 <body>
   <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">木頭</a></h1>
-  <h2><a href="/"></a></h2>
+  <h1><a href="/blog/">木頭</a></h1>
+  <h2><a href="/blog/"></a></h2>
 </div>
 <nav id="main-nav" class="alignright">
   <ul>
@@ -53,17 +53,36 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-06-02T10:56:37.000Z"><a href="/hello-world/">6月 2 2013</a></time>
+        <time datetime="2013-08-06T02:20:26.000Z"><a href="/blog/2013-08-helloworld.html">8月 6 2013</a></time>
       
       
   
-    <h1 class="title"><a href="/hello-world/">Hello World</a></h1>
+    <h1 class="title"><a href="/blog/2013-08-helloworld.html">Hello World</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Welcome to <a href="http://zespia.tw/hexo">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs">documentation</a> to learn how to use.</p>
+        <blockquote>
+<p>xxx
+xxxxxx</p>
+</blockquote>
+<figure class="highlight lang-javascript"><pre>  <span class="comment">// Caption</span>
+  $(<span class="string">'.entry'</span>).each(<span class="keyword">function</span>(i){
+    $(<span class="keyword">this</span>).find(<span class="string">'img'</span>).each(<span class="keyword">function</span>(){
+      <span class="keyword">var</span> alt = <span class="keyword">this</span>.alt;
+
+      <span class="keyword">if</span> (alt){
+        $(<span class="keyword">this</span>).after(<span class="string">'&lt;span class="caption"&gt;'</span> + alt + <span class="string">'&lt;/span&gt;'</span>);
+      }
+
+      $(<span class="keyword">this</span>).wrap(<span class="string">'&lt;a href="'</span> + <span class="keyword">this</span>.src + <span class="string">'" title="'</span> + alt + <span class="string">'" class="fancybox" rel="gallery'</span> + i + <span class="string">'" /&gt;'</span>);
+    });
+  });
+</pre></figure>
+
+<p>Welcome to <a href="http://zespia.tw/hexo">Hexo</a>! </p>
+<p>This is your very first post. Check <a href="http://zespia.tw/hexo/docs">documentation</a> to learn how to use.</p>
 
       
     </div>
@@ -109,8 +128,8 @@
   
 </div>
 <div class="clearfix"></div></footer>
-  <script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
+  <script src="/blog/js/jquery.imagesloaded.min.js"></script>
+<script src="/blog/js/gallery.js"></script>
 
 
 <script type="text/javascript">
@@ -127,8 +146,8 @@ var disqus_shortname = 'wangxian';
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 (function($){
   $('.fancybox').fancybox();
